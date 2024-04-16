@@ -10,8 +10,8 @@
   .profile__info {
     display: grid;
     width: 415px;
-    align-content: flex-end;
-    height: 77px;
+    align-content: center;
+
     grid-template-areas:
       "title button"
       "description description";
@@ -20,14 +20,17 @@
   .profile__title {
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 415px;
     font-size: 42px;
     line-height: 48px;
     font-weight: 500;
-    margin: 0;
+    margin: 0 0 7px;
     font-family: 'Inter', 'Arial', sans-serif;
     grid-area: title;
   }
   .profile__description {
+    overflow: hidden;
+    max-width: 415px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
@@ -36,27 +39,30 @@
     grid-area: description;
   }
   .profile__edit-button {
-    background-color: black;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
     border-color: #fff;
+    border-radius: 1px;
     width: 24px;
     height: 24px;
     padding: 0;
     margin-left: 18px;
+
     margin-top: 15px;
   }
   .profile__edit-button:hover{
     opacity: 60%;
   }
   .profile__add-button {
-    background-color: black;
+    background-color: transparent;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 2px;
     border-color: #fff;
     width: 150px;
     height: 50px;
-    margin-top: 15px;
+    margin-top: 33px;
     margin-left: auto;
     padding: 0;
     border-radius: 2px;
@@ -66,7 +72,7 @@
     opacity: 60%;
     border-radius: 2px;
   }
-  @media screen and (max-width: 622px){
+    @media screen and (max-width: 622px){
     .profile {
       display: flex;
       overflow: hidden;
@@ -119,31 +125,35 @@
   }
   @media screen and (max-width: 620px){
     .profile {
-      display: flex;
+      /* display: flex;
+      overflow: hidden; */
       align-items: center;
       flex-direction: column;
-      overflow: hidden;
     }
     .profile__image{
       margin: 0;
     }
-    .profile__info {
+     .profile__info {
       margin-top: 30px;
       display: flex;
-      flex-wrap: wrap;
+      /* flex-wrap: wrap;
       justify-content: center;
-      width: 100%;
+      width: 100%; */
     }
     .profile__title {
+      overflow: hidden;
+      max-width: 415px;
       text-align: center;
       max-width: 222px;
       font-size: 22px;
       margin-right: 10px;
     }
     .profile__description {
+      overflow: hidden;
+    max-width: 415px;
       text-align: center;
       margin-bottom: 36px;
-      overflow: hidden;
+      /* overflow: hidden; */
     }
     .profile__edit-button {
 

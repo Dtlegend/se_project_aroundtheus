@@ -1,5 +1,7 @@
 # David Thompson Project 3: Around The U.S.
 
+Link: (https://daveleg.github.io/se_project_aroundtheus/)
+
 My Traveler's Profile project aims to provide users with an interactive platform to explore the traveler's adventures around the world. It features a responsive design that adapts seamlessly to various screen sizes, including desktop, tablet, and mobile devices. It was a great project to introduce me to responsive design and grid layouts.
 
 ## Overview  

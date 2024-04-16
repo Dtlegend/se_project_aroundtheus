@@ -4,6 +4,8 @@
 .header__image{
   width: 173px;
   height: 33px;
+  border-bottom-color: #545454;
+  border-bottom: 1px;
 }
 .header__line{
   width: 880px;
