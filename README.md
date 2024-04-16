@@ -13,6 +13,6 @@ My Traveler's Profile project aims to provide users with an interactive platform
 * Images
 * Visual Studio Code
  
-* Video:(https://drive.google.com/file/d/1MCV2iWSSE0qFbae96GSgrauSj__ClWuX/view?usp=sharing)
+* Video: (https://drive.google.com/file/d/1zoENOLw8FoPYGLcRz3n_nEBKqteCR_zg/view?usp=sharing)
 
   
