@@ -1,21 +1,18 @@
-# Project 3: Around The U.S.
+# David Thompson Project 3: Around The U.S.
 
-### Overview  
+My Traveler's Profile project aims to provide users with an interactive platform to explore the traveler's adventures around the world. It features a responsive design that adapts seamlessly to various screen sizes, including desktop, tablet, and mobile devices. It was a great project to introduce me to responsive design and grid layouts.
 
-* Intro  
+## Overview  
+
+* Display Grids: Grid Layout: Implemented a grid layout to organize and showcase the destinations in a   visually appealing manner.
+* Responsive Design: Ensured the project is accessible and user-friendly across different devices and   screen sizes.
+ * Google Fonts Integration: I used Google Fonts to enhance typography and improve readability.
+* Intro 
+* HTML 
 * Figma  
-* Images  
+* Images
+* Visual Studio Code
+ 
+* Video:(https://drive.google.com/file/d/1MCV2iWSSE0qFbae96GSgrauSj__ClWuX/view?usp=sharing)
+
   
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
