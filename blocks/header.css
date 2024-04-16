@@ -1,0 +1,11 @@
+.header {
+    margin-top: 45px;
+}
+.header__image{
+  width: 173px;
+  height: 33px;
+}
+.header__line{
+  width: 880px;
+  padding-top: 41px;
+}
