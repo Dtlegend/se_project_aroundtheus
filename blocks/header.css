@@ -1,11 +1,12 @@
 .header {
     margin-top: 45px;
+    border-bottom-style: solid;
+    border-bottom-color: #545454;
 }
 .header__image{
   width: 173px;
   height: 33px;
-  border-bottom-color: #545454;
-  border-bottom: 1px;
+  margin-bottom: 41px;
 }
 .header__line{
   width: 880px;
