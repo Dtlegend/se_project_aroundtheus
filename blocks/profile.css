@@ -75,7 +75,7 @@
     opacity: 60%;
     border-radius: 2px;
   }
-  @media screen and (mi-width: 622px){
+  @media screen and (min-width: 622px){
     .profile__title{
       overflow: hidden;
     }
