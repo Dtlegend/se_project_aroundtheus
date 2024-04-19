@@ -9,10 +9,7 @@
   height: 33px;
   margin-bottom: 41px;
 }
-.header__line{
-  width: 880px;
-  padding-top: 41px;
-}
+
 @media screen and (max-width: 620px){
   .header__image{
     display: flex;

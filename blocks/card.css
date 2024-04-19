@@ -7,7 +7,6 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    overflow: hidden;
     font-family: 'Inter', 'Arial', sans-serif;
     font-weight: 900;
     font-size: 24px;
@@ -45,5 +44,5 @@
    border: none;
   }
   .card__like-button:hover{
-    opacity: 60%;
+    opacity: 50%;
   }
