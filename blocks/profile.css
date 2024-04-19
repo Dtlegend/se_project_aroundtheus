@@ -110,16 +110,7 @@
       /* font-size: 22px; */
       flex-wrap: wrap;
     }
-    .profile__description {
-      /* text-align: center;
-      overflow: hidden; */
-    }
-    /* .profile__add-button{
-      width: 282px;
-      margin: 0;
-      max-width: 100%;
 
-    } */
   }
   @media screen and (max-width: 620px){
 
