@@ -1,0 +1,69 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0, 0.5);
+  padding: 0 19px;
+}
+
+.modal__container {
+  background-color: #fff;
+  position: relative;
+  padding: 36px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__exit {
+ background-image: url("../images/Close\ Icon.svg");
+ background-repeat: no-repeat;
+ background-size: contain;
+ position: absolute;
+ top: -45px;
+ right: -45px;
+ width: 40px;
+ height: 40px;
+ border: none;
+ background-color: transparent;
+}
+.modal__input{
+  padding-bottom: 13px;
+  gap: 29px;
+  width: 100%;
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(84, 84, 84, 0.7);
+  border-bottom-width: 1px;
+
+}
+.modal__button {
+  width: 100%;
+  margin-top: 49px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #000;
+  height: 50px;
+}
+.modal__heading {
+  color: #000;
+  font-family: 'Inter','Arial', sans-serif ;
+  font-size: 24px;
+  font-weight: 900;
+  margin: 0 0 54px;
+}
+
+@media screen and (max-width:630px) {
+  .modal__exit {
+    right: 0;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+}
+}
