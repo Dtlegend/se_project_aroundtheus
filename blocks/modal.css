@@ -38,6 +38,9 @@ visibility: visible;
  border: none;
  background-color: transparent;
 }
+.modal__exit:hover{
+  cursor:pointer
+}
 .modal__input{
   padding-bottom: 13px;
   gap: 29px;
