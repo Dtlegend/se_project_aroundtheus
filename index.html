@@ -53,23 +53,25 @@
     </div>
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__exit" id="profile-exit-button"></button>
-        <p class="modal__heading">Edit profile</p>
+        <button type= "submit" class="modal__exit" id="profile-exit-button"></button>
+        <h1 class="modal__heading">Edit profile</h1>
        <form class="modal__form">
          <input
            type="text"
            class="modal__input"
            id="profile-title-input"
-           placeholder="Jacques Cousteau"
+           placeholder="Name"
            name="title"
+           required
          >
          <input
            type="text"
            class="modal__input"
            id="profile-description-input"
-           placeholder="Explorer"
-           name="description">
-         <button class="modal__button">Save</button>
+           placeholder="About"
+           name="description"
+           required>
+         <button type= "submit" class="modal__button">Save</button>
        </form>
       </div>
     </div>
@@ -87,6 +89,6 @@
     </li>
    </template>
 
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/index.js" defer></script>
   </body>
 </html>
