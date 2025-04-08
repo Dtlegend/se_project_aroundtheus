@@ -48,8 +48,8 @@ const cardListElement = document.querySelector(".cards__list");
 const previewImage = document.querySelector(".modal__image");
 const previewCaption = document.querySelector(".modal__caption");
 const previewExitBtn = document.querySelector("#preview-image-close-button");
-const openModalBtn = document.querySelector(".modal_opened");
-const closeModalBtn = document.querySelector(".modal__exit");
+
+
 const cardTemplate =
 document.querySelector("#card-template").content.firstElementChild;
 
@@ -81,7 +81,7 @@ function getCardElement(cardData) {
   const cardLikeBtn = cardElement.querySelector(".card__like-button");
   cardLikeBtn.addEventListener("click", () => {
     console.log("we are attempting to like it")
-    cardLikeBtn.classList.add("card__like-button-active");
+    cardLikeBtn.classList.add("card__like-button_active");
   })
 
   const cardDeleteBtn  = cardElement.querySelector(".card__delete-button");
@@ -111,17 +111,13 @@ function getCardElement(cardData) {
   // }
 }
 
-function setupImageModal() {
-  const cardImageElement = cardElement.querySelector(".card__image");
-  const modal = document.querySelector("#cardimage");
-}
+
 
 function handleProfileEditSubmit(e) {
   e.preventDefault();
   profileTitle.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
   //redo
-  renderCard( { name, link }, cardListElement);
   closeModal(profileEditModal);
 }
 
@@ -131,7 +127,6 @@ function handleAddCardFormSubmit(e) {
   const name = addCardNameInput.value;
   // get what the user has typed in to the addcardmodal inputs
   renderCard( { name, link }, cardListElement);
-  // the values for the name and link keys should be what the user has typed into those 2 inputs
   closeModal(addCardModal);
 }
 
@@ -140,7 +135,7 @@ profileEditBtn.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
   //use the openModal function instead
-  profileEditModal.classList.add("modal_opened");
+  openModal(profileEditModal);
 });
 profileExitBtn.addEventListener("click", () => {
   closeModal(profileEditModal);

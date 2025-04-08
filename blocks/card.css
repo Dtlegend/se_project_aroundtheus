@@ -70,7 +70,7 @@
   cursor: pointer;
 }
 
-.card__like-button-active {
+.card__like-button_active {
  background-image: url(../images/Union.svg);
  /* color: black; */
 }
@@ -79,6 +79,7 @@
   position: absolute;
   background-image: url("../images/trash.svg");
   width: 20px;
+
   height: 21px;
   border: none;
   right: 15px;
