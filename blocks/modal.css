@@ -12,7 +12,7 @@
   padding: 0 19px;
   visibility: hidden;
   transform: translateY(-20px);
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition: visibility 0.3s , opacity 0.3s ease-in;
   opacity: 0;
 
 }
@@ -30,7 +30,9 @@
   display: flex;
   flex-direction: column;
 }
-
+.modal__container_image{
+  background-color: transparent;
+}
 .modal__exit {
   background-image: url("../images/Close\ Icon.svg");
   background-repeat: no-repeat;
@@ -49,6 +51,9 @@
   opacity: 0.8;
 }
 
+.modal__image {
+  height: 540px;
+}
 .modal__input {
   padding-bottom: 13px;
   gap: 29px;
@@ -83,6 +88,10 @@
 }
 
 @media screen and (max-width:630px) {
+  .modal__image {
+    max-width: 240px;
+    height: 100%;
+  }
   .modal__exit {
     right: 0;
     width: 26px;
@@ -90,3 +99,4 @@
     padding: 0;
   }
 }
+

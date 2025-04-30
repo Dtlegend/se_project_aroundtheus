@@ -81,7 +81,7 @@ function getCardElement(cardData) {
   const cardLikeBtn = cardElement.querySelector(".card__like-button");
   cardLikeBtn.addEventListener("click", () => {
     console.log("we are attempting to like it")
-    cardLikeBtn.classList.add("card__like-button_active");
+    cardLikeBtn.classList.toggle("card__like-button_active");
   })
 
   const cardDeleteBtn  = cardElement.querySelector(".card__delete-button");
@@ -128,6 +128,7 @@ function handleAddCardFormSubmit(e) {
   // get what the user has typed in to the addcardmodal inputs
   renderCard( { name, link }, cardListElement);
   closeModal(addCardModal);
+  addCardForm.reset();
 }
 
 
