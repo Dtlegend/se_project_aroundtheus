@@ -1,4 +1,4 @@
-# David Thompson Project 5: Around The U.S.
+# David Thompson Project 6: Around The U.S.
 
 Link: https://github.com/Dtlegend/se_project_aroundtheus
 
