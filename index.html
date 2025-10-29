@@ -55,15 +55,18 @@
       <div class="modal__container">
         <button type= "button" class="modal__exit" id="profile-exit-button"></button>
         <h1 class="modal__heading">Edit profile</h1>
-       <form class="modal__form">
+       <form class="modal__form modal__form_type_edit" novalidate>
          <input
            type="text"
            class="modal__input"
            id="profile-title-input"
            placeholder="Name"
            name="title"
-           required
-         >
+           minlength="2"
+           maxlength="40"
+           required>
+           <span id= "profile-title-input-error"
+            class="modal__error"></span>
          <input
            type="text"
            class="modal__input"
@@ -71,7 +74,9 @@
            placeholder="About"
            name="description"
            required>
-         <button type= "submit" class="modal__button">Save</button>
+           <span id= "profile-title-input-error"
+            class="modal__error"></span>
+         <button type= "submit" class="modal__button modal__button_disabled">Save</button>
        </form>
       </div>
     </div>
@@ -106,23 +111,31 @@
       <div class="modal__container">
         <button type= "button" class="modal__exit" id="add-card-exit-button"></button>
         <h1 class="modal__heading">New Place</h1>
-       <form class="modal__form">
+       <form class="modal__form" novalidate>
          <input
            type="text"
            class="modal__input"
            id="add-card-name-input"
            placeholder="Name"
            name="title"
-           required
-         >
+           minlength="2"
+           maxlength="200"
+           required>
+           <span id= "add-name-input-error"
+            class="modal__error"></span>
+
          <input
            type="text"
            class="modal__input"
            id="add-card-description-input"
            placeholder="Image link"
            name="description"
+           minlength="2"
+           maxlength="200"
            required>
-         <button type= "submit" class="modal__button">Create</button>
+           <span id= "add-image-input-error"
+            class="modal__error"></span>
+         <button type= "submit" class="modal__button modal__button_disabled" >Create</button>
        </form>
       </div>
     </div>
@@ -153,5 +166,6 @@
     <!-- <span class="card__close"></span>
     <img class="card__content" id="cardimage"> -->
     <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/validate.js" defer></script>
   </body>
 </html>
