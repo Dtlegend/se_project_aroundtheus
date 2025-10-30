@@ -1,7 +1,7 @@
 function showInputError(formEl,inputElement,options) {
-  const errorMessageEl = formEl.querySelector(('.modal__error'));
+  const errorMessageEl = formEl.querySelector((`#${inputElement.id}-error`));
   inputElement.classList.add(options.inputErrorClass);
-  errorMessageEl.textContent = errorMessageEl;
+  errorMessageEl.textContent = inputElement.validationMessage;
   errorMessageEl.classList.add(options.errorClass);
 }
 
@@ -59,10 +59,10 @@ function setEventListeners(formEl, options, submitButton) {
 };
 
 function hideInputError(formEl,inputEl,options) {
-const errorClass = formEl.querySelector('.modal__error');
+const errorMessageEl = formEl.querySelector(`#${inputElement.id}-error`);
 inputEl.classList.remove(options.inputErrorClass);
-errorClass.textContent = "";
-errorClass.classList.remove(options.errorClass);
+errorMessageEl.textContent = "";
+errorMessageEl.classList.remove(options.errorClass);
 }
 
 function enableValidation(options) {
