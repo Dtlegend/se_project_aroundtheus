@@ -59,7 +59,7 @@ function setEventListeners(formEl, options, submitButton) {
 };
 
 function hideInputError(formEl,inputEl,options) {
-const errorMessageEl = formEl.querySelector(`#${inputElement.id}-error`);
+const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
 inputEl.classList.remove(options.inputErrorClass);
 errorMessageEl.textContent = "";
 errorMessageEl.classList.remove(options.errorClass);
