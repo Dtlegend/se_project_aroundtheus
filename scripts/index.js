@@ -50,6 +50,18 @@ const previewCaption = document.querySelector(".modal__caption");
 const previewExitBtn = document.querySelector("#preview-image-close-button");
 
 
+class Card {
+  constructor(data, cardSelector, handleImagineClick) {
+    this._handleImagineClick = handleImagineClick;
+  }
+  _setEventListeners() {
+    //...
+    this._cardImageElement.addEventListener('click', () => ) {
+      this._handleImagineClick(this);
+    });
+    }
+  }
+
 const cardTemplate =
 document.querySelector("#card-template").content.firstElementChild;
 
