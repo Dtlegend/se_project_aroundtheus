@@ -51,13 +51,15 @@ const previewExitBtn = document.querySelector("#preview-image-close-button");
 
 
 class Card {
-  constructor(data, cardSelector, handleImagineClick) {
-    this._handleImagineClick = handleImagineClick;
+  constructor(data, cardSelector, handleImageClick) {
+    this._handleImagineClick = handleImageClick;
+    this._data = data;
+    this._cardSelector = cardSelector;
   }
   _setEventListeners() {
     //...
-    this._cardImageElement.addEventListener('click', () => ) {
-      this._handleImagineClick(this);
+    this._cardImageElement.addEventListener('click', () =>  {
+      this._handleImageClick(this);
     });
     }
   }
@@ -180,7 +182,7 @@ function handleAddCardFormSubmit(e) {
 
 
 
-profileEditBtn.addEventListener("click", () => {
+profileEditBtn.addEventListener("click",  () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
   //use the openModal function instead
@@ -208,3 +210,60 @@ addCardForm.addEventListener("submit", handleAddCardFormSubmit)
 initialCards.forEach((cardData) => renderCard(cardData,cardListElement));
 
 setOverlayCloseListeners();
+
+class formValidator {
+
+  constructor(settings, formElement ) {
+    this._inputSelector = settings.inputSelector;
+   this._submitButtonSelector = settings.submitButtonSelector;
+   this._inactiveButtonClass = settings.inactiveButtonClass;
+   this._inputErrorClass = settings.inputErrorClass;
+   this._errorClass = settings.errorClass;
+
+   this._form = formElement;
+  }
+
+  enableValidation() {
+    this._form.addEventListener("submit", (evt) => {
+      evt.preventDefault();
+    });
+  }
+  _setEventListeners() {
+     const { inputSelector } = options;
+  const inputElement = Array.fromthis.form.querySelectorAll(this._inputSelector);
+  formEl.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+  });
+  toggleButtonState(inputElement, submitButton, options);
+
+  inputElement.forEach ((inputEl) => {
+    inputEl.addEventListener("input", () => {
+       console.log(inputEl.validity);
+       checkInputValidity(this.formEl,inputEl,options);
+       // no errors handling, is input valid or not? no handling
+       toggleButtonState(inputElement, submitButton, options);
+    });
+  });
+}
+
+  config() {
+this._addEventListener("submit", (e) => {
+  e.preventDefault();
+});
+setEventListeners(formElement, options, submitButton);
+};
+}
+const settings = {
+  formSelector: ".modal__form",
+  inputSelector: ".modal__input",
+  submitButtonSelector: ".modal__button",
+  inactiveButtonClass: ".modal__button_disabled",
+  inputErrorClass: ".modal__input_type_error",
+  errorClass: ".modal__error_visible",
+
+}
+const editFormValidator = new FormValidator(settings, editForm);
+const addFormValidator = new FormValidator(settings, addForm);
+//.Menu lowkey dissapeared. however starting to fill the formvalidator class//.
+
+editFormValidator.config();
